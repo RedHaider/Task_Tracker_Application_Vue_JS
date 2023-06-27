@@ -1,17 +1,24 @@
 <template>
   <header>
     <h1>{{ title }}</h1>
+    <Tracker_Button text="Add Task" color="green"/>
   </header>
 </template>
 
 <script>
-/* eslint-disable vue/multi-word-component-names */
-
+import Tracker_Button from './Tracker_Button';
 export default {
+  components: { Tracker_Button },
   name: 'AppHeader', // Renamed the component to "AppHeader"
   props: {
-    title: String,
+    title:{
+      type: String,
+      default: 'Hello World',
+    },
+  components:{
+    Tracker_Button,
   }
+  },
 }
 </script>
 
