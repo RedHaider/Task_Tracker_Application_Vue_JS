@@ -2,6 +2,8 @@
   <header>
     <h1>{{ title }}</h1>
     <Tracker_Button text="Add Task" color="green"/>
+    <Tracker_Button text="Update Task" color="Blue"/>
+    <Tracker_Button text="Delete Task" color="red"/>
   </header>
 </template>
 
