@@ -11,7 +11,7 @@ export default{
     },
     methods: {
         onClick(){
-        console.log('Here i am');
+        console.log('Here i am '+this.color);
     },
 }
 }

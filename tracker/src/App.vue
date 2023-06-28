@@ -6,11 +6,46 @@
 
 <script>
 import Header from './components/header'
+import Task from './components/task'
 
 export default {
   name: 'App',
   components: {
     Header, // Corrected component name from Headers to Header
+    
+  },
+  data(){
+    return {
+      task: []
+    }
+  },
+  created(){
+    this.task= [
+    {
+        id: 123,
+        text: "Button Text 1",
+        day: "Monday",
+        reminder: true
+      },
+      {
+        id: 456,
+        text: "Button Text 2",
+        day: "Tuesday",
+        reminder: false
+      },
+      {
+        id: 789,
+        text: "Button Text 3",
+        day: "Wednesday",
+        reminder: true
+      },
+     {
+        id: 987,
+        text: "Button Text 4",
+        day: "Thursday",
+        reminder: false
+      }
+    ]
   }
 }
 </script>
