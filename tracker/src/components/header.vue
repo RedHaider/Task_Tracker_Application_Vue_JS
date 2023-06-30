@@ -8,10 +8,11 @@
 </template>
 
 <script>
+/* eslint-disable vue/multi-word-component-names */
 import Tracker_Button from './Tracker_Button';
 export default {
   components: { Tracker_Button },
-  name: 'AppHeader', // Renamed the component to "AppHeader"
+  name: 'Header', // Renamed the component to "AppHeader"
   props: {
     title:{
       type: String,
@@ -22,6 +23,7 @@ export default {
   }
   },
 }
+/* eslint-enable vue/multi-word-component-names */
 </script>
 
 <style scoped>
