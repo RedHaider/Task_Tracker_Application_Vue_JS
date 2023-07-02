@@ -12,6 +12,7 @@ export default{
     methods: {
         onClick(){
         console.log('Here i am '+this.color);
+        this.$emit('toggle-add-task')
     },
 }
 }
