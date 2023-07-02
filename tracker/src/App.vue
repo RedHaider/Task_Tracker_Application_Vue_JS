@@ -1,6 +1,9 @@
 <template>
   <div class="container">
-    <Header @toggle-add-task="toggleAddTask" title="Task Tracker" />
+    <Header 
+    @toggle-add-task="toggleAddTask" 
+    title="Task Tracker"
+    :showAddTask="showAddTask" />
     <div  v-show="showAddTask">
     <AddTask @add-task="addTask" />
     </div>
@@ -9,9 +12,9 @@
 </template>
 
 <script>
-import Header from './components/header.vue'
-import Tasks from './components/Tasks.vue'
-import AddTask from './components/AddTask.vue'
+import Tasks from './components/Tasks'
+import AddTask from './components/AddTask'
+import Header from './components/Header'
 
 export default {
   name: 'App',

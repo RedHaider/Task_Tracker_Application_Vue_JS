@@ -2,9 +2,9 @@
   <header>
     <h1>{{ title }}</h1>
     <Tracker_Button 
-    @toggle-add-task="$emit('toggle-add-task')" 
-    text="Add Task" 
-    color="green"/>
+    @btn-click="$emit('toggle-add-task')"
+      :text="showAddTask ? 'Close' : 'Add Task'"
+      :color="showAddTask ? 'red' : 'green'"/>
   </header>
 </template>
 
@@ -15,15 +15,11 @@ export default {
   components: { Tracker_Button },
   name: 'Header', // Renamed the component to "AppHeader"
   props: {
-    title:{
-      type: String,
-      default: 'Hello World',
+      title: String,
+      showAddTask: Boolean,
     },
-  components:{
-    Tracker_Button,
+
   }
-  },
-}
 /* eslint-enable vue/multi-word-component-names */
 </script>
 
