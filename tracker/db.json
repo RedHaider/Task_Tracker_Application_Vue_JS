@@ -1,34 +1,22 @@
 {
   "tasks": [
     {
-      "id": 123,
-      "text": "Button Text 1",
-      "day": "Monday",
-      "reminder": true
+      "text": "i need to bath",
+      "day": "Sunday",
+      "reminder": false,
+      "id": 1
     },
     {
-      "id": 456,
-      "text": "Button Text 2",
-      "day": "Tuesday",
-      "reminder": false
+      "text": "sddsds",
+      "day": "may, 12, 20,13",
+      "reminder": true,
+      "id": 3
     },
     {
-      "id": 789,
-      "text": "Button Text 3",
-      "day": "Wednesday",
-      "reminder": true
-    },
-    {
-      "id": 987,
-      "text": "Button Text 4",
-      "day": "Thursday",
-      "reminder": false
-    },
-    {
-      "id": 351,
-      "text": "fdsf",
-      "day": "dsfdsf",
-      "reminder": true
+      "text": "text",
+      "day": "wednesday",
+      "reminder": true,
+      "id": 4
     }
   ]
 }
